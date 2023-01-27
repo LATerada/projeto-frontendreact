@@ -1,4 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { Footer } from "./Components/Footer/Footer";
+import { Header } from "./Components/Header/styles";
+import { Tickets } from "./components/Tickets/styles";
+import { Nav } from "./components/Nav/styles";
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -17,10 +21,11 @@ function App() {
   return (
     <div>
       <GlobalStyled/>
-      <Container/>
-      <header></header>
-      <main></main>
-      <footer></footer>
+        <Container/>
+          <Header/>
+          <Nav/>
+          <Tickets/>
+          <Footer/>
     </div>
   )
 }
