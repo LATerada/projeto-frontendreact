@@ -18,6 +18,9 @@ function App() {
     <div>
       <GlobalStyled/>
       <Container/>
+      <header></header>
+      <main></main>
+      <footer></footer>
     </div>
   )
 }
