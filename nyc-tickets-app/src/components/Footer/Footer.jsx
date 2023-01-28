@@ -1,5 +1,8 @@
+import { PageFooter } from "./styles"
+
+
 export const Footer = () => {
     return (
-        <span></span>
+        <PageFooter></PageFooter>
     )
 }
