@@ -1,14 +1,14 @@
-import { PageFilter } from "./styles"
+import { Input, Input2, Label, Label2, PageFilter } from "./styles"
 
 export const Filter = () => {
     return(
         <PageFilter>
-            <label>Search by name</label>
-            <input type="text"></input>
-            <label>Min</label>
-            <input type="number"></input>
-            <label>Max</label>
-            <input type="number"></input>
+            <Label>Search by name:</Label>
+            <Input type="text"></Input>
+            <Label2>Min. Price:</Label2>
+            <Input2 type="number"></Input2>
+            <Label2>Max. Price:</Label2>
+            <Input2 type="number"></Input2>
         </PageFilter>
     )
 }
