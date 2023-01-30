@@ -1,8 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header/Header";
 import { Cart } from "./components/Cart/Cart";
-import Display from "./components/Display/Display";
-
+import { Display } from "./components/Display/Display";
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -13,15 +12,12 @@ const GlobalStyled = createGlobalStyle`
 `
 const Container = styled.div`
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-color: lightgreen;
   background: url("https://www.nyc.com/images/home/home_backing.jpg") no-repeat 50% fixed;
   background-size: cover;
-  /* z-index: -999; */
-  /* Backgroud image is blurry. it covers from the top to the bottom */
+  gap: 0 1vw;
 `
 
 function App() {

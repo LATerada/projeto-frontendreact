@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const CartPage = styled.aside`
-    width: 30vw;
-    height: fit-content;
-    margin-right: 15rem;
-    margin-top: 7rem;
-    border: 1px solid black;
+    background-color: #030303c4;
+    width: 25vw;
+    margin-right: 15vw;
+    border-radius: 1%;
 `
