@@ -7,3 +7,12 @@ export const PageHeader = styled.header`
     display: flex;
     align-items: center;
 `
+export const NycText = styled.span`
+    color: whitesmoke;
+    font-size: xx-large;
+`
+
+export const TicketsText = styled.span`
+    color: yellow;
+    font-size: xx-large;
+`
