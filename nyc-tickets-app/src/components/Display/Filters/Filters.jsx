@@ -1,8 +1,8 @@
-import { PageNav } from "./styles"
+import { PageFilter } from "./styles"
 
-export const Nav = () => {
+export const Filter = () => {
     return(
-        <PageNav>
+        <PageFilter>
             <label>Search by name</label>
             <input type="text"></input>
             <br></br>
@@ -11,6 +11,6 @@ export const Nav = () => {
             <input type="number"></input>
             <label>Max</label>
             <input type="number"></input>
-        </PageNav>
+        </PageFilter>
     )
 }

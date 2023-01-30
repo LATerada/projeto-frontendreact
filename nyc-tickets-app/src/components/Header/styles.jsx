@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
 export const PageHeader = styled.header`
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     background-color: #ffffff10;
-    padding: 0 10rem;
+    margin: 0 15rem;
+    /* padding: 0 15rem; */
     display: flex;
     align-items: flex-end;
 `

@@ -1,8 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header/Header";
-import { Nav } from "./components/Filters/Filters";
-import { Tickets } from "./components/Tickets/Tickets";
-import { Footer } from "./components/Footer/Footer";
+import { Cart } from "./components/Cart/Cart";
+import Display from "./components/Display/Display";
 
 
 const GlobalStyled = createGlobalStyle`
@@ -14,7 +13,8 @@ const GlobalStyled = createGlobalStyle`
 `
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
   background-color: lightgreen;
@@ -30,9 +30,8 @@ function App() {
       <GlobalStyled/>
         <Container>
           <Header/>
-          <Nav/>
-          <Tickets/>
-          <Footer/>
+          <Display/>
+          <Cart/>
         </Container>
     </div>
   )

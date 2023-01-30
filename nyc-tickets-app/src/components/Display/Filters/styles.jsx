@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-export const PageNav = styled.nav`
-    height: 40vh;
-    width: 100vw;
+export const PageFilter = styled.nav`
+    height: 20vh;
+    width: 45vw;
     background-color: #ffffff10;
-    padding: 0 10rem;
+    margin-left: 15rem;
     display: flex;
     align-items: flex-end ;
 `
