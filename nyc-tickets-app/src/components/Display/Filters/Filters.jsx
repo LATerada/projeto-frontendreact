@@ -1,6 +1,6 @@
 import { FilterContainer, Input, Select } from "./styles"
 
-export const Filter = ({query, minPrice, maxPrice, setQuery, setMinPrice, setMaxPrice}) => {
+export const Filter = ({query, minPrice, maxPrice, sortParameter, setQuery, setMinPrice, setMaxPrice, setSortParameter}) => {
     return(
         <FilterContainer>
             <Input 
@@ -21,9 +21,11 @@ export const Filter = ({query, minPrice, maxPrice, setQuery, setMinPrice, setMax
                 value={maxPrice}
                 onChange={(event) => {setMaxPrice(event.target.value)}}
                 />
-            <Select>
-                <option>Low to Hight</option>
-                <option>Hight to Low</option>
+            <Select
+                value={sortParameter}
+                onChange={(event) => {setSortParameter(event.target.value)}}>
+                <option value={"low"}>Low to Hight</option>
+                <option value={"high"} >Hight to Low</option>
             </Select>
     
         </FilterContainer>
