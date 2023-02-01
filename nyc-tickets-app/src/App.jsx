@@ -22,14 +22,14 @@ const Container = styled.div`
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalStyled/>
         <Container>
           <Header/>
           <Display/>
           <Cart/>
         </Container>
-    </div>
+    </>
   )
 }
 

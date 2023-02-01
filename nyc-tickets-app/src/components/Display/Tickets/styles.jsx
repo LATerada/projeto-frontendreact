@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-export const PageTickets = styled.section`
+export const TicketsContainer = styled.section`
     background-color: #0000002d;
 `

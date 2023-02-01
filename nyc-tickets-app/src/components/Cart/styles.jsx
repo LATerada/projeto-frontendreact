@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CartPage = styled.aside`
+export const CartContainer = styled.aside`
     background-color: #030303c4;
     color: whitesmoke;
     width: 25vw;
