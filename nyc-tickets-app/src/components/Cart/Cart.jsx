@@ -1,4 +1,4 @@
-import { CartContainer, CartPage, H1 } from "./styles"
+import { CartContainer, H1 } from "./styles"
 
 export const Cart = () => {
     return (

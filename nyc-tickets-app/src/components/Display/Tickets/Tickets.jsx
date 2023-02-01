@@ -1,4 +1,4 @@
-import { PageTickets, TicketsContainer } from "./styles"
+import { TicketsContainer } from "./styles"
 
 export const Tickets = () => {
     return (

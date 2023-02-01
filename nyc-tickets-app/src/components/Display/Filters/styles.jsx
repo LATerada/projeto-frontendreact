@@ -7,12 +7,12 @@ export const FilterContainer = styled.div`
 
 export const Input = styled.input`
     background-color: #f5f5f513;
-    width: 73%;
+    color: white;
     border: none;
 `
 
-export const Input2 = styled.input`
+export const Select = styled.select`
     background-color: #f5f5f513;
-    width: 30%;
+    color: white;
     border: none;
 `

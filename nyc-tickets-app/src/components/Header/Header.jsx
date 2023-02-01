@@ -1,5 +1,4 @@
-import { Tickets } from "../Display/Tickets/Tickets";
-import { HeaderContainer, NycText, PageHeader, TicketsText } from "./styles";
+import { HeaderContainer, NycText, TicketsText } from "./styles";
 
 export const Header = () => {
     return(
