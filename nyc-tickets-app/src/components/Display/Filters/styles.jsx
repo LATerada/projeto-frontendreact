@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const PageFilter = styled.nav`
+export const FilterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
 `

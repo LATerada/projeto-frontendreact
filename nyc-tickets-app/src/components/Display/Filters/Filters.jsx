@@ -1,11 +1,11 @@
-import { Input, Input2, Label, Label2, PageFilter } from "./styles"
+import { FilterContainer, Input, Input2 } from "./styles"
 
 export const Filter = () => {
     return(
-        <PageFilter>
+        <FilterContainer>
             <Input placeholder="Search by name:" type="text"></Input>
             <Input2 placeholder="Minimun Price" type="number"></Input2>
             <Input2 placeholder="Maximum Price" type="number"></Input2>
-        </PageFilter>
+        </FilterContainer>
     )
 }
