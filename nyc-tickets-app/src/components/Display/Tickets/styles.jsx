@@ -4,26 +4,52 @@ export const TicketsContainer = styled.section`
     background-color: #0000002d;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
 `
 export const CardContainer = styled.div`
-    width: 45%;
+    width: 46%;
     height: 30vh;
-    border: 1px solid white;
+    position: relative;
 `
 export const TicketImage = styled.img`
     width: 100%;
-    min-height: 20vh;
+    height: 100%;
+`
+export const DescriptionContainer = styled.div`
+    background-color: #030303a6;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
 `
 export const TicketName = styled.p`
-    
-`
-export const TicketPrice = styled.p`
-    
+    color: whitesmoke;
+    width: 100%;
+    padding-top: 4px;
+    padding-left: 12px;
+
+    :hover{
+        color: yellow;
+    }
 `
 export const TicketNeighborhood = styled.p`
-    
+    color: whitesmoke;
+    width: 1000%;
+    padding-left: 12px;
+`
+export const TicketPrice = styled.p`
+    color: whitesmoke;
+    width: 60%;
+    padding-left: 12px;
+    margin-bottom: 4px;
 `
 export const AddToCartButton = styled.button`
-    
+    width: 35%;
+    align-self: flex-start;
+    margin-right: 12px;
+    margin-bottom: 4px;
 `

@@ -1,4 +1,4 @@
-import { AddToCartButton, CardContainer, TicketImage, TicketName, TicketNeighborhood, TicketPrice, TicketsContainer } from "./styles"
+import { AddToCartButton, CardContainer, DescriptionContainer, TicketImage, TicketName, TicketNeighborhood, TicketPrice, TicketsContainer } from "./styles"
 
 export const Tickets = ({tickets, query, minPrice, maxPrice, sortParameter}) => {
     return (
@@ -26,10 +26,13 @@ export const Tickets = ({tickets, query, minPrice, maxPrice, sortParameter}) => 
                 return(
                     <CardContainer key={index}>
                         <TicketImage src={item.src} alt={item.alt}/>
-                        <TicketName>{item.name}</TicketName>
-                        <TicketPrice>U${item.price}</TicketPrice>
-                        <TicketNeighborhood>{item.neighborhood}</TicketNeighborhood>
-                        <AddToCartButton>Add to Cart</AddToCartButton>
+                        <DescriptionContainer>
+                            <TicketName>{item.name}</TicketName>
+                            <TicketNeighborhood>{item.neighborhood}</TicketNeighborhood>
+                            <TicketPrice>U${item.price}</TicketPrice>
+                            <AddToCartButton>Add to Cart</AddToCartButton>
+                        </DescriptionContainer>
+                        
                     </CardContainer>
                 )
             })}
