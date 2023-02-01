@@ -24,13 +24,18 @@ const Container = styled.div`
 
 function App() {
   const [tickets] = useState(ticketsList);
+  const [query,setQuery] = useState("");
 
   return (
     <>
       <GlobalStyled/>
         <Container>
           <Header/>
-          <Display tickets={tickets}/>
+          <Display 
+          tickets={tickets}
+          query={query}
+          setQuery={setQuery}
+          />
           <Cart />
         </Container>
     </>

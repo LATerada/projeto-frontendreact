@@ -1,9 +1,14 @@
 import { AddToCartButton, CardContainer, TicketImage, TicketName, TicketNeighborhood, TicketPrice, TicketsContainer } from "./styles"
 
-export const Tickets = ({tickets}) => {
+export const Tickets = ({tickets, query, setQuery}) => {
     return (
         <TicketsContainer>
-            {tickets.map((item,index)=> {
+        
+            {tickets
+            .filter((item)=>{
+                return item.name.toLowerCase().includes(query.toLowerCase())
+            })
+            .map((item,index)=> {
                 return(
                     <CardContainer key={index}>
                         <TicketImage src={item.src} alt={item.alt}/>
