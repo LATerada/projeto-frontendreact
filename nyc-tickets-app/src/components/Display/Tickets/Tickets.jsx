@@ -1,7 +1,8 @@
 import { TicketsContainer } from "./styles"
 
-export const Tickets = () => {
+export const Tickets = ({tickets}) => {
     return (
-        <TicketsContainer>Tickets Display</TicketsContainer>
+        <TicketsContainer>
+        </TicketsContainer>
     )
 }

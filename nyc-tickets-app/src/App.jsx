@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header/Header";
 import { Cart } from "./components/Cart/Cart";
 import { Display } from "./components/Display/Display";
+import  ticketList from "./data/TicketsList"
+import { useState } from "react";
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -21,13 +23,15 @@ const Container = styled.div`
 `
 
 function App() {
+  const [tickets] = useState(ticketList);
+
   return (
     <>
       <GlobalStyled/>
         <Container>
           <Header/>
-          <Display/>
-          <Cart/>
+          <Display tickets={tickets}/>
+          <Cart tickets={tickets} />
         </Container>
     </>
   )
