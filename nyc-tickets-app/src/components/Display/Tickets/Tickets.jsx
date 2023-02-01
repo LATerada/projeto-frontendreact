@@ -3,13 +3,13 @@ import { AddToCartButton, CardContainer, TicketImage, TicketName, TicketNeighbor
 export const Tickets = ({tickets, query, minPrice, maxPrice, sortParameter}) => {
     return (
         <TicketsContainer>
-        
+            
             {tickets
             // .filter((item) => {
-            //     return item.price <= {maxPrice} || minPrice === ""
+            //     return item.price <= {maxPrice} || maxPrice === ""
             // })
             // .filter((item) => {
-            //     return item.price >= {minPrice} || maxPrice === ""
+            //     return item.price >= {minPrice} || minPrice === ""
             // })
             .filter((item)=>{
                 return item.name.toLowerCase().includes(query.toLowerCase())
