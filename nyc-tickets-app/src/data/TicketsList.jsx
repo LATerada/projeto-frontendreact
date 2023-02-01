@@ -1,4 +1,4 @@
-const TicketsList = [
+export let ticketsList = [
     {
         name: "Museum of Modern Art (MoMA)",
         price: 25,
@@ -10,7 +10,7 @@ const TicketsList = [
         name: "Summit One Vanderbilt",
         price: 39,
         neighborhood: "Midtown Manhattan",
-        src: "https://8266185.fs1.hubspotusercontent-na1.net/hubfs/8266185/summitov.com%20October%202022%20File%20Hosting%20-%20DO%20NOT%20TOUCH/Scaled-BuyTicket-summit-experience%20ticket.jpg",
+        src: "https://image.visitenovayork.com.br/wp-content/uploads/2021/11/Summit-One-Vanderbilt-Tickets-Affinity.jpg.webp",
         alt: "Summit",
     },
     {
@@ -31,7 +31,7 @@ const TicketsList = [
         name: "Solomon R. Guggenheim Museum",
         price: 25,
         neighborhood: "Upper East Side",
-        src: "https://en.wikipedia.org/wiki/Solomon_R._Guggenheim_Museum#/media/File:NYC_-_Guggenheim_Museum.jpg",
+        src: "https://images.weserv.nl/?url=https://www.guggenheim.org/wp-content/uploads/2020/09/architecture-srgm-interior-rotunda-frank-lloyd-wright.jpg&w=1170",
         alt: "Guggenheim",
     },
     {
