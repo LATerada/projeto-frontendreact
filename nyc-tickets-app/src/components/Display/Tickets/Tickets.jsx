@@ -1,10 +1,13 @@
 import { AddToCartButton, CardContainer, TicketImage, TicketName, TicketNeighborhood, TicketPrice, TicketsContainer } from "./styles"
 
-export const Tickets = ({tickets, query, setQuery}) => {
+export const Tickets = ({tickets, query, minPrice}) => {
     return (
         <TicketsContainer>
         
             {tickets
+            .filter((item) => {
+                return item.price >= {minPrice} || item.price !== ""
+            })
             .filter((item)=>{
                 return item.name.toLowerCase().includes(query.toLowerCase())
             })

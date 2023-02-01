@@ -1,6 +1,6 @@
 import { FilterContainer, Input, Select } from "./styles"
 
-export const Filter = ({query,setQuery}) => {
+export const Filter = ({query, minPrice, setQuery, setMinPrice}) => {
     return(
         <FilterContainer>
             <Input 
@@ -12,6 +12,8 @@ export const Filter = ({query,setQuery}) => {
             <Input 
                 placeholder="Minimun Price" 
                 type="number"
+                value={minPrice}
+                onChange={(event) => {setMinPrice(event.target.value)}}
                 />
             <Input 
                 placeholder="Maximum Price"

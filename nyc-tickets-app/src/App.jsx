@@ -25,6 +25,7 @@ const Container = styled.div`
 function App() {
   const [tickets] = useState(ticketsList);
   const [query,setQuery] = useState("");
+  const [minPrice,setMinPrice] = useState(-Infinity)
 
   return (
     <>
@@ -34,7 +35,9 @@ function App() {
           <Display 
           tickets={tickets}
           query={query}
+          minPrice={minPrice}
           setQuery={setQuery}
+          setMinPrice={setMinPrice}
           />
           <Cart />
         </Container>
