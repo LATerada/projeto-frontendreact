@@ -3,12 +3,9 @@ import { Input, Input2, Label, Label2, PageFilter } from "./styles"
 export const Filter = () => {
     return(
         <PageFilter>
-            <Label>Search by name:</Label>
-            <Input type="text"></Input>
-            <Label2>Min. Price:</Label2>
-            <Input2 type="number"></Input2>
-            <Label2>Max. Price:</Label2>
-            <Input2 type="number"></Input2>
+            <Input placeholder="Search by name:" type="text"></Input>
+            <Input2 placeholder="Minimun Price" type="number"></Input2>
+            <Input2 placeholder="Maximum Price" type="number"></Input2>
         </PageFilter>
     )
 }
