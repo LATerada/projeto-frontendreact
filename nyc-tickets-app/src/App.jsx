@@ -26,6 +26,7 @@ function App() {
   const [tickets] = useState(ticketsList);
   const [query,setQuery] = useState("");
   const [minPrice,setMinPrice] = useState(-Infinity)
+  const [maxPrice,setMaxPrice] = useState(Infinity)
 
   return (
     <>
@@ -36,8 +37,10 @@ function App() {
           tickets={tickets}
           query={query}
           minPrice={minPrice}
+          maxPrice={maxPrice}
           setQuery={setQuery}
           setMinPrice={setMinPrice}
+          setMaxPrice={setMaxPrice}
           />
           <Cart />
         </Container>
