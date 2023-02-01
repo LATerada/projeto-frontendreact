@@ -6,5 +6,5 @@ export const DisplayContainer = styled.main`
     margin-left: 12vw;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2vh;
 `

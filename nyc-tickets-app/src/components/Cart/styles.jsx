@@ -6,6 +6,7 @@ export const CartContainer = styled.aside`
     width: 18vw;
     height: fit-content;
     margin-right: 12vw;
+    margin-top: 7vh;
     border-radius: 1%;
 `
 export const H1 = styled.h1`
