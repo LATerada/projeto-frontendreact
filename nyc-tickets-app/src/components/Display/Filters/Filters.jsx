@@ -1,6 +1,6 @@
 import { FilterContainer, Input, Select } from "./styles"
 
-export const Filter = ({query, minPrice, maxPrice, sortParameter, setQuery, setMinPrice, setMaxPrice, setSortParameter}) => {
+export const Filter = ({ query, minPrice, maxPrice, sortParameter, setQuery, setMinPrice, setMaxPrice, setSortParameter }) => {
     return(
         <FilterContainer>
             <Input 

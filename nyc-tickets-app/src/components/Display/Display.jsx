@@ -2,7 +2,7 @@ import { Filter } from "./Filters/Filters"
 import { DisplayContainer } from "./styles"
 import { Tickets } from "./Tickets/Tickets"
 
-export const Display = ({tickets, query, minPrice, maxPrice, sortParameter, cart, setQuery, setMinPrice, setMaxPrice, setSortParameter, setCart}) => {
+export const Display = ({ tickets, query, minPrice, maxPrice, sortParameter, cart, setQuery, setMinPrice, setMaxPrice, setSortParameter, setCart }) => {
     return(
         <DisplayContainer>
         <Filter
