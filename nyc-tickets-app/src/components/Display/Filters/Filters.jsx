@@ -24,8 +24,8 @@ export const Filter = ({query, minPrice, maxPrice, sortParameter, setQuery, setM
             <Select
                 value={sortParameter}
                 onChange={(event) => {setSortParameter(event.target.value)}}>
-                <option value={"low"}>Low to Hight</option>
-                <option value={"high"} >Hight to Low</option>
+                <option value="low">Low to Hight</option>
+                <option value="high" >Hight to Low</option>
             </Select>
     
         </FilterContainer>
