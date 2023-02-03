@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CartContainer = styled.aside`
     background-color: #030303c4;
     color: whitesmoke;
-    width: 18vw;
+    width: 22vw;
     height: fit-content;
     margin-right: 12vw;
     margin-top: 7vh;
