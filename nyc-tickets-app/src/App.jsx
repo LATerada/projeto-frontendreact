@@ -25,8 +25,8 @@ const Container = styled.div`
 function App() {
   const [tickets] = useState(ticketsList);
   const [query,setQuery] = useState("");
-  const [minPrice,setMinPrice] = useState(-Infinity)
-  const [maxPrice,setMaxPrice] = useState(Infinity)
+  const [minPrice,setMinPrice] = useState("")
+  const [maxPrice,setMaxPrice] = useState("")
   const [sortParameter,setSortParameter] = useState("low")
   const [cart,setCart] = useState([])
 
