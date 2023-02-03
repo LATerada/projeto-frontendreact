@@ -28,7 +28,6 @@ function App() {
   const [minPrice,setMinPrice] = useState(-Infinity)
   const [maxPrice,setMaxPrice] = useState(Infinity)
   const [sortParameter,setSortParameter] = useState("low")
-  const [amount,setAmount] = useState(0)
   const [cart,setCart] = useState([])
 
   return (
@@ -42,19 +41,15 @@ function App() {
             minPrice={minPrice}
             maxPrice={maxPrice}
             sortParameter={sortParameter}
-            amount={amount}
             cart={cart}
             setQuery={setQuery}
             setMinPrice={setMinPrice}
             setMaxPrice={setMaxPrice}
             setSortParameter={setSortParameter}
-            setAmount={setAmount}
             setCart={setCart}
           />
           <Cart 
-            amount={amount}
             cart={cart}
-            setAmount={setAmount}
             setCart={setCart}
           />
         </Container>

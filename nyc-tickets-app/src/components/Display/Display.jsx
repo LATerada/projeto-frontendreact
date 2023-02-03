@@ -2,7 +2,7 @@ import { Filter } from "./Filters/Filters"
 import { DisplayContainer } from "./styles"
 import { Tickets } from "./Tickets/Tickets"
 
-export const Display = ({tickets, query, minPrice, maxPrice, sortParameter, amount, cart, setQuery, setMinPrice, setMaxPrice, setSortParameter, setAmount, setCart}) => {
+export const Display = ({tickets, query, minPrice, maxPrice, sortParameter, cart, setQuery, setMinPrice, setMaxPrice, setSortParameter, setCart}) => {
     return(
         <DisplayContainer>
         <Filter
@@ -21,9 +21,7 @@ export const Display = ({tickets, query, minPrice, maxPrice, sortParameter, amou
             minPrice={minPrice}
             maxPrice={maxPrice}
             sortParameter={sortParameter}
-            amount={amount}
             cart={cart}
-            setAmount={setAmount}
             setCart={setCart}
            />
         </DisplayContainer>
