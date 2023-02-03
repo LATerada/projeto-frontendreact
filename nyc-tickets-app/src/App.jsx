@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header/Header";
 import { Cart } from "./components/Cart/Cart";
 import { Display } from "./components/Display/Display";
-import { ticketsList }from "./data/TicketsList";
+import { ticketsList } from "./data/TicketsList";
 import { useState } from "react";
 
 const GlobalStyled = createGlobalStyle`
@@ -28,6 +28,8 @@ function App() {
   const [minPrice,setMinPrice] = useState(-Infinity)
   const [maxPrice,setMaxPrice] = useState(Infinity)
   const [sortParameter,setSortParameter] = useState("low")
+  const [amount,setAmount] = useState(0)
+  const [cart,setCart] = useState([])
 
   return (
     <>
@@ -35,17 +37,26 @@ function App() {
         <Container>
           <Header/>
           <Display 
-          tickets={tickets}
-          query={query}
-          minPrice={minPrice}
-          maxPrice={maxPrice}
-          sortParameter={sortParameter}
-          setQuery={setQuery}
-          setMinPrice={setMinPrice}
-          setMaxPrice={setMaxPrice}
-          setSortParameter={setSortParameter}
+            tickets={tickets}
+            query={query}
+            minPrice={minPrice}
+            maxPrice={maxPrice}
+            sortParameter={sortParameter}
+            amount={amount}
+            cart={cart}
+            setQuery={setQuery}
+            setMinPrice={setMinPrice}
+            setMaxPrice={setMaxPrice}
+            setSortParameter={setSortParameter}
+            setAmount={setAmount}
+            setCart={setCart}
           />
-          <Cart />
+          <Cart 
+            amount={amount}
+            cart={cart}
+            setAmount={setAmount}
+            setCart={setCart}
+          />
         </Container>
     </>
   )

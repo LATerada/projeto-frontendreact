@@ -1,6 +1,7 @@
 export let ticketsList = [
     {
         name: "Museum of Modern Art (MoMA)",
+        id: 1,
         price: 25,
         neighborhood: "Midtown",
         src: "https://imgcap.capturetheatlas.com/wp-content/uploads/2020/10/moma-what-to-do-in-new-york-1415x540.jpg",
@@ -8,6 +9,7 @@ export let ticketsList = [
     },
     {
         name: "Summit One Vanderbilt",
+        id: 2,
         price: 39,
         neighborhood: "Midtown",
         src: "https://image.visitenovayork.com.br/wp-content/uploads/2021/11/Summit-One-Vanderbilt-Tickets-Affinity.jpg.webp",
@@ -15,6 +17,7 @@ export let ticketsList = [
     },
     {
         name: "One World Observatory",
+        id: 3,
         price: 44,
         neighborhood: "Lower",
         src: "https://prod-satisfilabs-resources-gcs.satis.fi/ClientMedia/1038/50b4b3a82eab4af8a99940a73cc01025.jpg",
@@ -22,6 +25,7 @@ export let ticketsList = [
     },
     {
         name: "The Met Cloisters",
+        id: 4,
         price: 30,
         neighborhood: "Upper",
         src: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b7/f9/4c/the-cloisters.jpg?w=2000&h=-1&s=1",
@@ -29,6 +33,7 @@ export let ticketsList = [
     },
     {
         name: "Solomon R. Guggenheim Museum",
+        id: 5,
         price: 25,
         neighborhood: "Upper East Side",
         src: "https://images.weserv.nl/?url=https://www.guggenheim.org/wp-content/uploads/2020/09/architecture-srgm-interior-rotunda-frank-lloyd-wright.jpg&w=1170",
@@ -36,6 +41,7 @@ export let ticketsList = [
     },
     {
         name: "Metropolitan Museum of Art (MET)",
+        id: 6,
         price: 30,
         neighborhood: "Upper East Side",
         src: "https://media.cntraveler.com/photos/5a84572586e4b63c297d47fd/16:9/w_2240,c_limit/The-Met_2018_GettyImages-541359628.jpg",
@@ -43,6 +49,7 @@ export let ticketsList = [
     },
     {
         name: "American Museum of Natural History",
+        id: 7,
         price: 28,
         neighborhood: "Upper West Side",
         src: "https://i1.wp.com/hyperallergic.com/wp-content/uploads/2020/07/14279464255_9deb8ffd45_o.jpg?resize=720%2C424&quality=100&ssl=1",
@@ -50,6 +57,7 @@ export let ticketsList = [
     },
     {
         name: "Edge",
+        id: 8,
         price: 40,
         neighborhood: "Chelsea",
         src: "https://cdn.getyourguide.com/img/tour/621e3edfbd0d8.jpeg/145.jpg",
@@ -57,6 +65,7 @@ export let ticketsList = [
     },
     {
         name: "Empire State Building",
+        id: 9,
         price: 44,
         neighborhood: "Midtown",
         src: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_334,q_75,w_579/https://assets.simpleviewinc.com/simpleview/image/upload/crm/newyorkstate/GettyImages-486334510_CC36FC20-0DCE-7408-77C72CD93ED4A476-cc36f9e70fc9b45_cc36fc73-07dd-b6b3-09b619cd4694393e.jpg",
@@ -64,6 +73,7 @@ export let ticketsList = [
     },
     {
         name: "9/11 Memorial & Museum",
+        id: 10,
         price: 29,
         neighborhood: "Financial District",
         src: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_334,q_75,w_579/https://assets.simpleviewinc.com/simpleview/image/upload/crm/newyorkstate/9-11-memorial-03-marley-white_08304459-fd51-e9bc-1df612407cbe64fb.jpg",
@@ -71,6 +81,7 @@ export let ticketsList = [
     },
     {
         name: "New York Public Library",
+        id: 11,
         price: 0,
         neighborhood: "Midtown",
         src: "https://legacynyplorg-live.s3.amazonaws.com/s3fs-public/sasb_09_03_2021_banners-02105.jpeg",

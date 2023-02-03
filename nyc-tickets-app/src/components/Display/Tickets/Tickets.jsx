@@ -1,6 +1,27 @@
 import { AddToCartButton, CardContainer, DescriptionContainer, TicketImage, TicketName, TicketNeighborhood, TicketPrice, TicketsContainer } from "./styles"
 
-export const Tickets = ({tickets, query, minPrice, maxPrice, sortParameter}) => {
+export const Tickets = ({ tickets, query, minPrice, maxPrice, sortParameter, cart, setCart }) => {
+
+    const addTicket = (ticket) => {
+        for(let item of cart){
+            if(ticket.id === item.id){
+                item.quantity +=1
+                item.amount += ticket.price
+                console.log(cart)
+                return
+            }
+        }
+        setCart([
+            ...cart,
+            ticket={
+                ...ticket,
+                quantity: 1,
+                amount: ticket.price
+            }
+        ])
+    }
+    console.log(cart)
+
     return (
         <TicketsContainer>
             
@@ -30,7 +51,7 @@ export const Tickets = ({tickets, query, minPrice, maxPrice, sortParameter}) => 
                             <TicketName>{item.name}</TicketName>
                             <TicketNeighborhood>{item.neighborhood}</TicketNeighborhood>
                             <TicketPrice>U${item.price}</TicketPrice>
-                            <AddToCartButton>Add to Cart</AddToCartButton>
+                            <AddToCartButton onClick={() => {addTicket(item)}} >Add to Cart</AddToCartButton>
                         </DescriptionContainer>
                         
                     </CardContainer>
