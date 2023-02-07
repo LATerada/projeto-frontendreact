@@ -5,8 +5,14 @@ export const Tickets = ({ tickets, query, minPrice, maxPrice, sortParameter, car
     const addTicket = (ticket) => {
         for(let item of cart){
             if(ticket.id === item.id){
-                item.quantity +=1
-                item.amount += ticket.price
+                const newCart = [...cart]
+                const newItem = {...item,
+                    quantity: item.quantity + 1,
+                    amount: item.amount + ticket.price
+                }
+                const index = cart.indexOf(item)
+                newCart.splice(index,1, newItem)
+                setCart(newCart)
                 console.log(cart)
                 return
             }
