@@ -7,6 +7,7 @@ export const TicketsContainer = styled.section`
     justify-content: center;
     padding: 1rem;
     gap: 1rem;
+        font-family: 'Inter', sans-serif;
 `
 export const CardContainer = styled.div`
     width: 46%;
@@ -40,6 +41,7 @@ export const TicketNeighborhood = styled.p`
     color: whitesmoke;
     width: 1000%;
     padding-left: 12px;
+    font-family: 'Satisfy', cursive;
 `
 export const TicketPrice = styled.p`
     color: whitesmoke;
@@ -52,4 +54,5 @@ export const AddToCartButton = styled.button`
     align-self: flex-start;
     margin-right: 12px;
     margin-bottom: 4px;
+    font-family: 'Inter', sans-serif;
 `

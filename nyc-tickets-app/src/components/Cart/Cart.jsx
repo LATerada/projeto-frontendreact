@@ -1,4 +1,4 @@
-import { CartContainer, H1 } from "./styles"
+import { CartContainer, H1, HorizontalLine, TicketContainer, Total } from "./styles"
 
 export const Cart = ({ cart, setCart }) => {
     const removeItem = (item, index) => {
@@ -35,18 +35,16 @@ export const Cart = ({ cart, setCart }) => {
                 .map((item,index) => {
                     if(cart.length > 0){
                         return(
-                            <div key={item.id}>
-                            <p>{item.name}</p>
-                            <span>{item.quantity} x  U${item.amount},00</span>
-                            <span> _________________</span>
-                            <button onClick={() => removeItem(item,index)}>Remove</button>
-                        </div>
+                            <TicketContainer key={item.id}>
+                                <p>{item.name}</p>
+                                <p>{item.quantity} x U${item.amount},00</p>
+                                <button onClick={() => removeItem(item,index)}><span class="material-symbols-outlined">delete</span></button>
+                            </TicketContainer>
                         )
                     }
                 })}
-            <span></span>
-            <span></span>
-            <p>TOTAL: U${calculateTotal()}</p>
+            <HorizontalLine></HorizontalLine>
+            <Total>TOTAL: U${calculateTotal()}</Total>
          
         </CartContainer>
     )

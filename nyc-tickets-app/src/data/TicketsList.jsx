@@ -56,12 +56,12 @@ export let ticketsList = [
         alt: "American Museum of Natural History",
     },
     {
-        name: "Edge",
+        name: "The Edge Deck",
         id: 8,
         price: 40,
         neighborhood: "Chelsea",
         src: "https://cdn.getyourguide.com/img/tour/621e3edfbd0d8.jpeg/145.jpg",
-        alt: "Edge",
+        alt: "The Edge Deck",
     },
     {
         name: "Empire State Building",
