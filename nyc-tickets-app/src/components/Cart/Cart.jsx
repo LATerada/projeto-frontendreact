@@ -15,7 +15,6 @@ export const Cart = ({ cart, setCart }) => {
             const index = cart.indexOf(item)
             newCart.splice(index,1, newRemovedItem)
             setCart(newCart)
-            console.log(cart)
             return
         }
     }
@@ -24,10 +23,10 @@ export const Cart = ({ cart, setCart }) => {
         let total = 0
         for(let item of cart){
             total += item.amount
-            console.log(total)
         }
         return total
     }
+    console.log(cart)
 
     return (
         <CartContainer>

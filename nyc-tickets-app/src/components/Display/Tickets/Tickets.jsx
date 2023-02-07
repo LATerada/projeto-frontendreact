@@ -13,7 +13,6 @@ export const Tickets = ({ tickets, query, minPrice, maxPrice, sortParameter, car
                 const index = cart.indexOf(item)
                 newCart.splice(index,1, newItem)
                 setCart(newCart)
-                console.log(cart)
                 return
             }
         }
@@ -26,7 +25,6 @@ export const Tickets = ({ tickets, query, minPrice, maxPrice, sortParameter, car
             }
         ])
     }
-    console.log(cart)
 
     return (
         <TicketsContainer>
