@@ -19,7 +19,7 @@ export let ticketsList = [
         name: "One World Observatory",
         id: 3,
         price: 44,
-        neighborhood: "Lower",
+        neighborhood: "Financial District",
         src: "https://prod-satisfilabs-resources-gcs.satis.fi/ClientMedia/1038/50b4b3a82eab4af8a99940a73cc01025.jpg",
         alt: "One World Observatory",
     },
