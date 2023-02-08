@@ -3,7 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Cart } from "./components/Cart/Cart";
 import { Display } from "./components/Display/Display";
 import { ticketsList } from "./data/TicketsList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -23,12 +23,17 @@ const Container = styled.div`
 `
 
 function App() {
-  const [tickets] = useState(ticketsList);
+  const [tickets,setTickets] = useState([]);
   const [query,setQuery] = useState("");
   const [minPrice,setMinPrice] = useState("")
   const [maxPrice,setMaxPrice] = useState("")
   const [sortParameter,setSortParameter] = useState("high")
   const [cart,setCart] = useState([])
+
+  useEffect(()=>{
+    setTickets(ticketsList)
+  },[])
+
 
   return (
     <>
