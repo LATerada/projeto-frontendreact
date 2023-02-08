@@ -59,4 +59,7 @@ export const AddToCartButton = styled.button`
     margin-right: 12px;
     margin-bottom: 4px;
     font-family: 'Inter', sans-serif;
+    :hover{
+        background-color: #b6b6b6;
+    }
 `

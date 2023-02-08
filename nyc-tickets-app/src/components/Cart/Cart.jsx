@@ -1,6 +1,15 @@
+import { useEffect } from "react"
 import { CartContainer, H1, HorizontalLine, TicketContainer, Total } from "./styles"
 
 export const Cart = ({ cart, setCart }) => {
+    // useEffect(()=> {
+    //     JSON.parse(localStorage.getItem("cart"))
+    // },[])
+    // useEffect(()=> {
+    //     JSON.stringify(localStorage.setItem("cart",cart))
+    // },[cart])
+    localStorage.setItem("cart",cart)
+    localStorage.getItem("cart")
     const removeItem = (item, index) => {
         if(item.quantity === 1){
             const newCart = [...cart]
