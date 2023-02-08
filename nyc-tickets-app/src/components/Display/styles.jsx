@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const DisplayContainer = styled.main`
-    min-height: 70vh;
+    min-height: 75vh;
+    padding-bottom: 2rem;
     width: 52vw;
     margin-left: 12vw;
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+    gap: 2rem;
 `

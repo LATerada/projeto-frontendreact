@@ -1,6 +1,24 @@
+import { useEffect } from "react"
 import { CartContainer, H1, HorizontalLine, TicketContainer, Total } from "./styles"
 
 export const Cart = ({ cart, setCart }) => {
+
+    useEffect(()=>{
+        const storagedCart = JSON.parse(localStorage.getItem("cart"))
+        if(storagedCart){
+            setCart(storagedCart)
+        }
+    },[])
+
+    useEffect(()=>{
+        if(cart.length > 0){
+            localStorage.setItem("cart", JSON.stringify(cart))
+            setCart(cart)
+        }else{
+            localStorage.clear()
+        }
+    },[cart])
+
     const removeItem = (item, index) => {
         if(item.quantity === 1){
             const newCart = [...cart]
@@ -26,7 +44,6 @@ export const Cart = ({ cart, setCart }) => {
         }
         return total
     }
-    console.log(cart)
 
     return (
         <CartContainer>

@@ -1,20 +1,28 @@
 import styled from "styled-components"
 
 export const FilterContainer = styled.div`
-    height: 4vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
 `
 
 export const Input = styled.input`
     background-color: #f5f5f513;
     color: white;
     border: none;
+    padding: 1rem;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
 `
 
 export const Select = styled.select`
     background-color: #f5f5f513;
     color: white;
     border: none;
+    padding: 1rem;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
