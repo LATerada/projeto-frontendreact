@@ -34,7 +34,6 @@ function App() {
     setTickets(ticketsList)
   },[])
 
-
   return (
     <>
       <GlobalStyled/>
