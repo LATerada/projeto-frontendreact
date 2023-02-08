@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header/Header";
 import { Cart } from "./components/Cart/Cart";
 import { Display } from "./components/Display/Display";
+import { ticketsList } from "./data/TicketsList";
+import { useState } from "react";
 
 const GlobalStyled = createGlobalStyle`
   * {
@@ -21,15 +23,37 @@ const Container = styled.div`
 `
 
 function App() {
+  const [tickets] = useState(ticketsList);
+  const [query,setQuery] = useState("");
+  const [minPrice,setMinPrice] = useState("")
+  const [maxPrice,setMaxPrice] = useState("")
+  const [sortParameter,setSortParameter] = useState("low")
+  const [cart,setCart] = useState([])
+
   return (
-    <div>
+    <>
       <GlobalStyled/>
         <Container>
           <Header/>
-          <Display/>
-          <Cart/>
+          <Display 
+            tickets={tickets}
+            query={query}
+            minPrice={minPrice}
+            maxPrice={maxPrice}
+            sortParameter={sortParameter}
+            cart={cart}
+            setQuery={setQuery}
+            setMinPrice={setMinPrice}
+            setMaxPrice={setMaxPrice}
+            setSortParameter={setSortParameter}
+            setCart={setCart}
+          />
+          <Cart 
+            cart={cart}
+            setCart={setCart}
+          />
         </Container>
-    </div>
+    </>
   )
 }
 

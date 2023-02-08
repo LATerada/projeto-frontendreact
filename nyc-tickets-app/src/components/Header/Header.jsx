@@ -1,12 +1,12 @@
-import { Tickets } from "../Display/Tickets/Tickets";
-import { NycText, PageHeader, TicketsText } from "./styles";
+import { DotText, HeaderContainer, NycText, TicketsText } from "./styles";
 
 export const Header = () => {
     return(
-        <PageHeader>
-            <NycText>NYC</NycText>
-            <TicketsText>.Tickets</TicketsText>
-        </PageHeader>
+        <HeaderContainer>
+            <NycText>NYC </NycText>
+            <DotText>. </DotText>
+            <TicketsText> Tickets</TicketsText>
+        </HeaderContainer>
 
     )
 }
