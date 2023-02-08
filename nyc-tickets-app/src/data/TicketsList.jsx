@@ -87,4 +87,12 @@ export let ticketsList = [
         src: "https://legacynyplorg-live.s3.amazonaws.com/s3fs-public/sasb_09_03_2021_banners-02105.jpeg",
         alt: "New York Public Library",
     },
+    {
+        name: "Central Park Zoo",
+        id: 12,
+        price: 20,
+        neighborhood: "Lenox Hill",
+        src: "https://www.adventurestudenttravel.com/wp-content/uploads/2014/01/Central-Park-Zoo-2-scaled.jpg",
+        alt: "Central Park Zoo",
+    },
 ]
