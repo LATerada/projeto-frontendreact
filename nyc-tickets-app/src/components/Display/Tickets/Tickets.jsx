@@ -37,7 +37,7 @@ export const Tickets = ({ tickets, query, minPrice, maxPrice, sortParameter, car
                 return item.price >= minPrice || minPrice === ""
             })
             .filter((item)=>{
-                return item.name.toLowerCase().includes(query.toLowerCase())
+                return item.name.toLowerCase().includes(query.toLowerCase()) || item.neighborhood.toLowerCase().includes(query.toLowerCase())
             })
             .sort((currentTicket, nextTicket) => {
                 switch(sortParameter){

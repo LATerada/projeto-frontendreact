@@ -27,7 +27,7 @@ function App() {
   const [query,setQuery] = useState("");
   const [minPrice,setMinPrice] = useState("")
   const [maxPrice,setMaxPrice] = useState("")
-  const [sortParameter,setSortParameter] = useState("low")
+  const [sortParameter,setSortParameter] = useState("high")
   const [cart,setCart] = useState([])
 
   return (

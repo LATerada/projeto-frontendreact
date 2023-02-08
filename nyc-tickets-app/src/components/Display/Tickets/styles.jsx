@@ -5,14 +5,17 @@ export const TicketsContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
-    gap: 1rem;
-        font-family: 'Inter', sans-serif;
+    padding: 2rem;
+
+    gap: 2rem;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const CardContainer = styled.div`
-    width: 46%;
+    width: 47.5%;
     height: 30vh;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const TicketImage = styled.img`
     width: 100%;
@@ -26,6 +29,7 @@ export const DescriptionContainer = styled.div`
     flex-wrap: wrap;
     position: absolute;
     bottom: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const TicketName = styled.p`
     color: whitesmoke;

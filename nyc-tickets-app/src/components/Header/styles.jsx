@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderContainer = styled.header`
-    height: 20vh;
+    height: 15vh;
     width: 85vw;
     margin: 0 12vw;
     display: flex;
@@ -15,9 +15,11 @@ export const NycText = styled.span`
 export const DotText = styled.span`
     color: yellow;
     font-size: xx-large;
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow;
 `
 export const TicketsText = styled.span`
     color: yellow;
     font-size: xx-large;
     font-family: 'Satisfy', cursive;
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow;
 `
