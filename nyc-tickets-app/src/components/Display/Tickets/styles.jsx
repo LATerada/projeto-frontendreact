@@ -5,15 +5,15 @@ export const TicketsContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
 
-    gap: 2rem;
+    gap: 1rem;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const CardContainer = styled.div`
-    width: 47%;
-    height: 30vh;
+    width: 48%;
+    height: 32vh;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
