@@ -13,7 +13,7 @@ export const TicketsContainer = styled.section`
 `
 export const CardContainer = styled.div`
     width: 48%;
-    height: 32vh;
+    height: 30vh;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
