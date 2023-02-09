@@ -6,7 +6,7 @@ export const CartContainer = styled.aside`
     width: 23vw;
     height: fit-content;
     margin-right: 12vw;
-    margin-top: 5rem;
+    margin-top: 4rem;
     border-radius: 1%;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ export const TicketContainer = styled.div`
     align-items: center;
     font-family: 'Inter', sans-serif;
     border: 1px dashed whitesmoke;
-    gap: 1rem;
+    gap: 0.25rem;
 `
 export const HorizontalLine = styled.p`
     display: flex;
