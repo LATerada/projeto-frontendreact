@@ -12,12 +12,14 @@ export const Filter = ({ query, minPrice, maxPrice, sortParameter, setQuery, set
             <Input 
                 placeholder="Minimun Price" 
                 type="number"
+                min="0"
                 value={minPrice}
                 onChange={(event) => {setMinPrice(event.target.value)}}
                 />
             <Input 
                 placeholder="Maximum Price"
                 type="number"
+                min="0"
                 value={maxPrice}
                 onChange={(event) => {setMaxPrice(event.target.value)}}
                 />
