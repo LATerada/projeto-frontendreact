@@ -29,6 +29,7 @@ export const Filter = ({ query, minPrice, maxPrice, sortParameter, setQuery, set
                 <option value="" disabled >Sort by price</option>
                 <option value="low">Low to Hight</option>
                 <option value="high" >Hight to Low</option>
+                <option value="">None</option>
             </Select>
     
         </FilterContainer>
