@@ -24,8 +24,14 @@ export const CartContainer = styled.aside`
         margin-right: 8vw;
     }
 
-    @media (max-width:612px){
-        margin-top: 7.9rem;
+    @media (max-width:611px){
+        margin-top: 7.5rem;
+    }
+
+    @media (max-width:526px){
+        width: 35vw;
+        margin-top: 3.5rem;
+        margin-right: 4vw;
     }
 `
 export const H1 = styled.h1`
@@ -33,6 +39,10 @@ export const H1 = styled.h1`
     font-family: 'Satisfy', cursive;
     align-self: flex-start;
     text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow;
+
+    @media (max-width:526px){
+        font-size: medium;
+    }
 `
 export const TicketContainer = styled.div`
     margin-bottom: 1rem;
@@ -50,8 +60,15 @@ export const TicketContainer = styled.div`
         width: 139px;
         font-size: smaller;
     }
+
     @media (max-width:760px){
+        padding: 0.5rem;
         gap: 0.15rem;
+    }
+
+    @media (max-width:526px){
+        max-width: 130px;
+        font-size: xx-small;
     }
 `
 export const TicketName = styled.p`
@@ -73,6 +90,10 @@ export const TicketButton = styled.p`
     @media (max-width:840px){
         font-size: smaller;
     }
+
+    @media (max-width:526px){
+        font-size: 20px;
+    }
 `
 export const HorizontalLine = styled.p`
     display: flex;
@@ -86,10 +107,16 @@ export const Total = styled.p`
     font-family: 'Inter', sans-serif;
 
     @media (max-width:840px){
+        padding: 1.5rem;
         font-size: smaller;
     }
 
     @media (max-width:760px){
-        gap: 1rem;
+        font-size: xx-small;
+    }
+
+    @media (max-width:526px){
+        padding: 1rem;
+        font-size: xx-small;
     }
 `
