@@ -18,6 +18,21 @@ export const Input = styled.input`
     padding: 0.5rem;
     border-radius: 2%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:611px){
+        font-size: xx-small;
+        padding: 0.25rem;
+    }
+
+    @media (max-width:427px){
+        width: 34%;
+        font-size: 7px;
+    }
+
+    @media (max-width:320px){
+        width: 34%;
+        font-size: 6px;
+    }
 `
 
 export const Select = styled.select`
@@ -28,4 +43,20 @@ export const Select = styled.select`
     padding: 0.5rem;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:611px){
+        width: 34%;
+        font-size: xx-small;
+        padding: 0.25rem;
+    }
+
+    @media (max-width:427px){
+        width: 34%;
+        font-size: 7px;
+    }
+
+    @media (max-width:320px){
+        width: 34%;
+        font-size: 5px;
+    }
 `

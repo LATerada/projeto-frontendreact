@@ -9,6 +9,11 @@ export const TicketsContainer = styled.section`
     gap: 1rem;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:611px){
+        padding: 0.5rem 0;
+        gap: 0.5rem;
+    }
 `
 export const CardContainer = styled.div`
     width: 48%;
@@ -25,6 +30,10 @@ export const CardContainer = styled.div`
         width: 90%;
         height: 20vh;
     }
+
+    @media (max-width:427px){
+        height: 16vh;
+    }
 `
 export const TicketImage = styled.img`
     width: 100%;
@@ -36,12 +45,22 @@ export const DescriptionContainer = styled.div`
     min-height: 35%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     @media (max-width:840px){
         font-size: smaller;
+    }
+
+    @media (max-width:526px){
+        font-size: xx-small;
+    }
+
+    @media (max-width:427px){
+        min-height: 30%;
+        font-size: 8px;
     }
 `
 export const TicketName = styled.p`
@@ -65,6 +84,15 @@ export const TicketPrice = styled.p`
     width: 60%;
     padding-left: 12px;
     margin-bottom: 4px;
+
+    @media (max-width:526px){
+        min-width: 50%;
+    }
+
+    @media (max-width:427px){
+        width: 60%;
+        font-size: 8px;
+    }
 `
 export const AddToCartButton = styled.button`
     width: 34%;
@@ -74,5 +102,18 @@ export const AddToCartButton = styled.button`
     font-family: 'Inter', sans-serif;
     :hover{
         background-color: #b6b6b6;
+    }
+
+    @media (max-width:526px){
+        max-width: 45%;
+        align-self: flex-end;
+        font-size: xx-small;
+    }
+
+    @media (max-width:427px){
+        width: 34%;
+        margin-right: 4px;
+        margin-bottom: 8px;
+        font-size: 6px;
     }
 `

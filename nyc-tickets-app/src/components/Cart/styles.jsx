@@ -24,8 +24,22 @@ export const CartContainer = styled.aside`
         margin-right: 8vw;
     }
 
-    @media (max-width:612px){
-        margin-top: 7.9rem;
+    @media (max-width:611px){
+        margin-top: 3.4rem;
+    }
+
+    @media (max-width:526px){
+        width: 35vw;
+        margin-top: 3.5rem;
+        margin-right: 4vw;
+    }
+
+    @media (max-width:427px){
+        margin-top: 3.1rem;
+    }
+
+    @media (max-width:320px){
+        margin-top: 2.9rem;
     }
 `
 export const H1 = styled.h1`
@@ -33,6 +47,14 @@ export const H1 = styled.h1`
     font-family: 'Satisfy', cursive;
     align-self: flex-start;
     text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow;
+
+    @media (max-width:526px){
+        font-size: medium;
+    }
+
+    @media (max-width:427px){
+        padding: 1rem;
+    }
 `
 export const TicketContainer = styled.div`
     margin-bottom: 1rem;
@@ -50,28 +72,76 @@ export const TicketContainer = styled.div`
         width: 139px;
         font-size: smaller;
     }
+
     @media (max-width:760px){
+        padding: 0.5rem;
         gap: 0.15rem;
     }
+
+    @media (max-width:526px){
+        max-width: 110px;
+        font-size: xx-small;
+    }
+
+    @media (max-width:427px){
+        max-width: 10px;
+        font-size: 9px;
+    }
+
+    @media (max-width:320px){
+        max-width: 90px;
+        font-size: 8px;
+    }
+
 `
 export const TicketName = styled.p`
     width: 100%;
 
     @media (max-width:840px){
-        font-size: smaller;
+        font-size: 11px;
+    }
+
+    @media (max-width:526px){
+        font-size: 10px;
+    }
+
+    @media (max-width:320px){
+        font-size: 8px;
     }
 `
 
 export const TicketUnitPrice = styled.p`
 
     @media (max-width:840px){
-        font-size: smaller;
+        font-size: 11px;
+    }
+
+    @media (max-width:526px){
+        font-size: 10px;
+    }
+
+    @media (max-width:526px){
+        font-size: 8px;
     }
 `
 export const TicketButton = styled.p`
 
-    @media (max-width:840px){
-        font-size: smaller;
+    .material-symbols-outlined {
+        @media (max-width:840px){
+            font-size: 20px;
+        }
+
+        @media (max-width:526px){
+            font-size: 18px;
+        }
+
+        @media (max-width:427px){
+            font-size: 16px;
+        }
+
+        @media (max-width:320px){
+            font-size: 12px;
+        }
     }
 `
 export const HorizontalLine = styled.p`
@@ -86,10 +156,14 @@ export const Total = styled.p`
     font-family: 'Inter', sans-serif;
 
     @media (max-width:840px){
-        font-size: smaller;
+        font-size: 12px;
     }
 
-    @media (max-width:760px){
-        gap: 1rem;
+    @media (max-width:526px){
+        font-size: 10px;
+    }
+
+    @media (max-width:526px){
+        font-size: 8px;
     }
 `
