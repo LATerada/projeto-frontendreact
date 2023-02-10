@@ -84,7 +84,7 @@ export const TicketContainer = styled.div`
     }
 
     @media (max-width:427px){
-        max-width: 10px;
+        max-width: 100px;
         font-size: 9px;
     }
 
@@ -163,7 +163,7 @@ export const Total = styled.p`
         font-size: 10px;
     }
 
-    @media (max-width:526px){
+    @media (max-width:320px){
         font-size: 8px;
     }
 `
