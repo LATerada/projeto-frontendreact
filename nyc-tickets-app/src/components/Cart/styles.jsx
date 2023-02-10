@@ -120,7 +120,7 @@ export const TicketUnitPrice = styled.p`
         font-size: 10px;
     }
 
-    @media (max-width:526px){
+    @media (max-width:427px){
         font-size: 8px;
     }
 `
@@ -160,7 +160,8 @@ export const Total = styled.p`
     }
 
     @media (max-width:526px){
-        font-size: 10px;
+        padding: 1rem;
+        font-size: 9px;
     }
 
     @media (max-width:320px){
