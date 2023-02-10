@@ -84,7 +84,7 @@ export const TicketContainer = styled.div`
     }
 
     @media (max-width:427px){
-        max-width: 100px;
+        max-width: 10px;
         font-size: 9px;
     }
 
@@ -98,7 +98,11 @@ export const TicketName = styled.p`
     width: 100%;
 
     @media (max-width:840px){
-        font-size: 9px;
+        font-size: 11px;
+    }
+
+    @media (max-width:526px){
+        font-size: 10px;
     }
 
     @media (max-width:320px){
@@ -109,7 +113,11 @@ export const TicketName = styled.p`
 export const TicketUnitPrice = styled.p`
 
     @media (max-width:840px){
-        font-size: 9px;
+        font-size: 11px;
+    }
+
+    @media (max-width:526px){
+        font-size: 10px;
     }
 
     @media (max-width:526px){
@@ -148,16 +156,14 @@ export const Total = styled.p`
     font-family: 'Inter', sans-serif;
 
     @media (max-width:840px){
-        padding: 1.5rem;
-        font-size: smaller;
-    }
-
-    @media (max-width:760px){
-        font-size: xx-small;
+        font-size: 12px;
     }
 
     @media (max-width:526px){
-        padding: 1rem;
-        font-size: xx-small;
+        font-size: 10px;
+    }
+
+    @media (max-width:526px){
+        font-size: 8px;
     }
 `
