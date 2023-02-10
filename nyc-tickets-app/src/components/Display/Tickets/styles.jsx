@@ -6,13 +6,11 @@ export const TicketsContainer = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     padding: 1rem;
-
     gap: 1rem;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const CardContainer = styled.div`
-    min-width: 298px;
     width: 48%;
     height: 30vh;
     position: relative;
@@ -25,7 +23,7 @@ export const TicketImage = styled.img`
 export const DescriptionContainer = styled.div`
     background-color: #030303a6;
     width: 100%;
-    height: 35%;
+    min-height: 35%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -55,7 +53,7 @@ export const TicketPrice = styled.p`
     margin-bottom: 4px;
 `
 export const AddToCartButton = styled.button`
-    width: 35%;
+    width: 34%;
     align-self: flex-start;
     margin-right: 12px;
     margin-bottom: 4px;

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { CartContainer, H1, HorizontalLine, TicketContainer, Total } from "./styles"
+import { CartContainer, H1, HorizontalLine, TicketButton, TicketContainer, TicketName, TicketUnitPrice, Total } from "./styles"
 
 export const Cart = ({ cart, setCart }) => {
 
@@ -53,9 +53,9 @@ export const Cart = ({ cart, setCart }) => {
                     if(cart.length > 0){
                         return(
                             <TicketContainer key={item.id}>
-                                <p>{item.name}</p>
-                                <p>{item.quantity} x U${item.amount},00</p>
-                                <button onClick={() => removeItem(item,index)}><span class="material-symbols-outlined">delete</span></button>
+                                <TicketName>{item.name}</TicketName>
+                                <TicketUnitPrice>{item.quantity} x U${item.amount},00</TicketUnitPrice>
+                                <TicketButton onClick={() => removeItem(item,index)}><span class="material-symbols-outlined">delete</span></TicketButton>
                             </TicketContainer>
                         )
                     }

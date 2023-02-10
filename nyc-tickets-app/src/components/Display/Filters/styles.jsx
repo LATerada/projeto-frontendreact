@@ -5,24 +5,35 @@ export const FilterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
 `
 
 export const Input = styled.input`
     background-color: #f5f5f513;
     color: white;
     border: none;
-    padding: 1rem;
+    max-width: 25%;
+    padding: 0.5rem;
     border-radius: 2%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:1025px){
+     
+    }
 `
 
 export const Select = styled.select`
     background-color: #f5f5f513;
     color: white;
     border: none;
-    padding: 1rem;
+    max-width: 20%;
+    padding: 0.5rem;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    @media (max-width:1025px){
+       
+    }
 `
