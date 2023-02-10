@@ -14,6 +14,10 @@ export const HeaderContainer = styled.header`
     @media (max-width:526px){
         margin-left: 4vw;
     }
+
+    @media (max-width:320px){
+        height: 10vh;
+    }
 `
 export const NycText = styled.span`
     color: whitesmoke;
@@ -22,6 +26,10 @@ export const NycText = styled.span`
 
     @media (max-width:526px){
         font-size: x-large;
+    }
+
+    @media (max-width:320px){
+        font-size: large;
     }
 `
 export const DotText = styled.span`
@@ -32,6 +40,10 @@ export const DotText = styled.span`
     @media (max-width:526px){
         font-size: x-large;
     }
+
+    @media (max-width:320px){
+        font-size: large;
+    }
 `
 export const TicketsText = styled.span`
     color: yellow;
@@ -41,5 +53,9 @@ export const TicketsText = styled.span`
 
     @media (max-width:526px){
         font-size: x-large;
+    }
+
+    @media (max-width:320px){
+        font-size: large;
     }
 `

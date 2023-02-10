@@ -30,6 +30,10 @@ export const CardContainer = styled.div`
         width: 90%;
         height: 20vh;
     }
+
+    @media (max-width:320px){
+        height: 16vh;
+    }
 `
 export const TicketImage = styled.img`
     width: 100%;
@@ -49,8 +53,14 @@ export const DescriptionContainer = styled.div`
     @media (max-width:840px){
         font-size: smaller;
     }
+
     @media (max-width:526px){
         font-size: xx-small;
+    }
+
+    @media (max-width:320px){
+        min-height: 40%;
+        font-size: 8px;
     }
 `
 export const TicketName = styled.p`
@@ -78,6 +88,11 @@ export const TicketPrice = styled.p`
     @media (max-width:526px){
         min-width: 50%;
     }
+
+    @media (max-width:320px){
+        width: 60%;
+        font-size: 8px;
+    }
 `
 export const AddToCartButton = styled.button`
     width: 34%;
@@ -93,5 +108,12 @@ export const AddToCartButton = styled.button`
         max-width: 45%;
         align-self: flex-end;
         font-size: xx-small;
+    }
+
+    @media (max-width:320px){
+        width: 34%;
+        margin-right: 4px;
+        margin-bottom: 8px;
+        font-size: 6px;
     }
 `

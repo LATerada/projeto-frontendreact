@@ -23,6 +23,11 @@ export const Input = styled.input`
         font-size: xx-small;
         padding: 0.25rem;
     }
+
+    @media (max-width:320px){
+        width: 34%;
+        font-size: 6px;
+    }
 `
 
 export const Select = styled.select`
@@ -37,5 +42,10 @@ export const Select = styled.select`
     @media (max-width:526px){
         font-size: xx-small;
         padding: 0.25rem;
+    }
+
+    @media (max-width:320px){
+        width: 34%;
+        font-size: 5px;
     }
 `
