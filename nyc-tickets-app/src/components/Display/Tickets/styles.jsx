@@ -18,6 +18,12 @@ export const CardContainer = styled.div`
 
     @media (max-width:1025px){
         width: 95%;
+        height: 20vh;
+    }
+        
+    @media (max-width:840px){
+        width: 90%;
+        height: 20vh;
     }
 `
 export const TicketImage = styled.img`
@@ -33,6 +39,10 @@ export const DescriptionContainer = styled.div`
     position: absolute;
     bottom: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:840px){
+        font-size: smaller;
+    }
 `
 export const TicketName = styled.p`
     color: whitesmoke;

@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
     margin: 0 12vw;
     display: flex;
     align-items: center;
+    
+    @media (max-width:760px){
+        margin-left: 8vw;
+    }
 `
 export const NycText = styled.span`
     color: whitesmoke;

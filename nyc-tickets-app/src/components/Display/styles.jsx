@@ -8,4 +8,7 @@ export const DisplayContainer = styled.main`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    @media (max-width:760px){
+        margin-left: 8vw;
+    }
 `
