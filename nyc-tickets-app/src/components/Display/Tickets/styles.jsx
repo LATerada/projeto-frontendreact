@@ -31,7 +31,7 @@ export const CardContainer = styled.div`
         height: 20vh;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         height: 16vh;
     }
 `
@@ -58,8 +58,8 @@ export const DescriptionContainer = styled.div`
         font-size: xx-small;
     }
 
-    @media (max-width:320px){
-        min-height: 40%;
+    @media (max-width:427px){
+        min-height: 30%;
         font-size: 8px;
     }
 `
@@ -89,7 +89,7 @@ export const TicketPrice = styled.p`
         min-width: 50%;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         width: 60%;
         font-size: 8px;
     }
@@ -110,7 +110,7 @@ export const AddToCartButton = styled.button`
         font-size: xx-small;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         width: 34%;
         margin-right: 4px;
         margin-bottom: 8px;

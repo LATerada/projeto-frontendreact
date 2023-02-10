@@ -25,7 +25,7 @@ export const CartContainer = styled.aside`
     }
 
     @media (max-width:611px){
-        margin-top: 7.5rem;
+        margin-top: 3.4rem;
     }
 
     @media (max-width:526px){
@@ -34,8 +34,12 @@ export const CartContainer = styled.aside`
         margin-right: 4vw;
     }
 
+    @media (max-width:427px){
+        margin-top: 3.1rem;
+    }
+
     @media (max-width:320px){
-        margin-top: 3rem;
+        margin-top: 2.9rem;
     }
 `
 export const H1 = styled.h1`
@@ -48,7 +52,7 @@ export const H1 = styled.h1`
         font-size: medium;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         padding: 1rem;
     }
 `
@@ -75,8 +79,13 @@ export const TicketContainer = styled.div`
     }
 
     @media (max-width:526px){
-        max-width: 130px;
+        max-width: 110px;
         font-size: xx-small;
+    }
+
+    @media (max-width:427px){
+        max-width: 100px;
+        font-size: 9px;
     }
 
     @media (max-width:320px){
@@ -89,7 +98,7 @@ export const TicketName = styled.p`
     width: 100%;
 
     @media (max-width:840px){
-        font-size: smaller;
+        font-size: 9px;
     }
 
     @media (max-width:320px){
@@ -100,22 +109,26 @@ export const TicketName = styled.p`
 export const TicketUnitPrice = styled.p`
 
     @media (max-width:840px){
-        font-size: smaller;
+        font-size: 9px;
     }
 
-    @media (max-width:320px){
-        font-size: 7px;
+    @media (max-width:526px){
+        font-size: 8px;
     }
 `
 export const TicketButton = styled.p`
 
     .material-symbols-outlined {
         @media (max-width:840px){
-            font-size: 24px;
+            font-size: 20px;
         }
 
         @media (max-width:526px){
-            font-size: 20px;
+            font-size: 18px;
+        }
+
+        @media (max-width:427px){
+            font-size: 16px;
         }
 
         @media (max-width:320px){

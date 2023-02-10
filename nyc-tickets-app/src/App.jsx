@@ -62,5 +62,3 @@ function App() {
 }
 
 export default App
-// @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-// @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }

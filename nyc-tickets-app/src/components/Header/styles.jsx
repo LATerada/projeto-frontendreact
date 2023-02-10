@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
         margin-left: 4vw;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         height: 10vh;
     }
 `
@@ -28,7 +28,7 @@ export const NycText = styled.span`
         font-size: x-large;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         font-size: large;
     }
 `
@@ -41,7 +41,7 @@ export const DotText = styled.span`
         font-size: x-large;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         font-size: large;
     }
 `
@@ -55,7 +55,7 @@ export const TicketsText = styled.span`
         font-size: x-large;
     }
 
-    @media (max-width:320px){
+    @media (max-width:427px){
         font-size: large;
     }
 `
