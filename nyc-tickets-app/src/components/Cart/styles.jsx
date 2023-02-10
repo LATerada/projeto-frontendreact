@@ -13,6 +13,9 @@ export const CartContainer = styled.aside`
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media (max-width:1200px){
+        margin-top: 5.5rem;
+    }
 `
 export const H1 = styled.h1`
     padding: 1.25rem;

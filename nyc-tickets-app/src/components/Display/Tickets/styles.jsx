@@ -15,6 +15,10 @@ export const CardContainer = styled.div`
     height: 30vh;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media (max-width:1025px){
+        width: 95%;
+    }
 `
 export const TicketImage = styled.img`
     width: 100%;
