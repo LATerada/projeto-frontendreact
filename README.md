@@ -1,58 +1,73 @@
-Link do projeto:
-https://projeto-frontendreact-delta.vercel.app/
+# NYC Tickets
 
-nyc-tickets.surge.sh
+![Corte da página HOME](./nyc-tickets-app/src/assets/overview.png)
+O Projeto NYC TICKETS funciona como o front-end de um E-Commerce que possui uma página com três seções: Lista de ingressos, Filtros e o Carrinho.
 
-# projeto-frontendreact
+## Índice
 
-Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar a estrutura do que consideramos a estrutura do React. O objetivo é que funcione como o front-end de um E-Commerce
+- <a href="#funcionalidades">Funcionalidades do Projeto</a>
+- <a href="#layout">Layout</a>
+- <a href="#demonstracao">Demonstraçāo</a>
+- <a href="#rodar">Como rodar este projeto?</a>
+- <a href="#tecnologias">Tecnologias Utilizadas</a>
+- <a href="#autoras">Pessoa Autora</a>
 
-- JSX
-- Componentes
-- Props
-- Estado
-- Fluxo de dados no React
-- Renderização de listas
-- Renderização condicional
-- localStorage
+## 📱 Funcionalidades do Projeto
 
-# Requisitos
-
-O projeto consistirá em 3 grandes partes:
-
-1. Home
-    - Mostrando todos os produtos
-    - Deve haver alguma forma de ordenar os produtos por ordem crescente ou decrescente de preço (pode ser na home em si ou junto dos filtros)
-    - Produtos:
-        - Devem ter um botão que permita adicioná-los ao carrinho
-        - Devem exibir o nome, preço e imagem em um card
-2. Carrinho
-    - Mostrar todos os produtos e quantidades adicionadas
-    - Capacidade de remover itens do carrinho
-    - Mostrar o valor total do carrinho
-3. Filtro
+1. [x] Lista de Ingressos
+   - Mostrando todos os produtos
+   - Ordenaçāo crescente ou decrescente de preço
+   - Produtos:
+        - Tem um botão que permita adicioná-los ao carrinho
+        - Exibe o nome, preço e imagem em um card
+2. [x] Filtros
     - Por valor mínimo e máximo
     - Por nome do produto
+3. [x] Carrinho
+    - Mostra todos os produtos e quantidades adicionadas
+    - Pode-se remover itens do carrinho
+    - Mostrar o valor total do carrinho
+  
 
-Exemplo de estruturação de **UM** produto (Lembrem-se que vocês terão uma lista contendo todos):
+## 💻 Layout
 
+![Home](./nyc-tickets-app/src/assets/home.png)
+![Filter1](./nyc-tickets-app/src/assets/filter1.png)
+![Filter2](./nyc-tickets-app/src/assets/filter2.png)
 
-### Lista de Requisitos
-- Home (Lista de Produtos)
-    - [x]  O usuário deve ser capaz de visualizar uma lista de produtos
-    - [x]  O usuário deve ser capaz de visualizar os dados do produto (nome, preço e imagem)
-    - [x]  O usuário deve ser capaz de adicionar um produto no carrinho
-- Carrinho
-    - [x]  O usuário deve ser capaz de visualizar os produtos adicionados
-    - [x]  O usuário deve ser capaz de visualizar a quantidade correta de cada produto
-    - [x]  O usuário deve ser capaz de remover itens do carrinho
-    - [x]  O usuário deve ser capaz de ver corretamente o valor total de sua compra
-    - [x]  Quando a página é atualizada, os itens devem continuar no carrinho
-- Filtros e Ordenação
-    - [x]  O usuário deve ser capaz de filtrar os itens por preço mínimo
-    - [x]  O usuário deve ser capaz de filtrar os itens por preço máximo
-    - [x]  O usuário deve ser capaz de realizar uma busca por nome
-    - [x]  O usuário deve ser capaz de ordenar os itens em ordem crescente ou decrescente
-    - [x]  O usuário deve ser capaz de adicionar  filtros, busca e ordenação simultaneamente
-    - [x]  O usuário deve ser capaz de retornar à visualização sem filtros
- ### 
+## 💿 Demonstraçāo
+
+[Link demonstraçāo](http://nyc-tickets.surge.sh/)
+
+## 📝 Como rodar este projeto?
+
+```bash
+# Clone este repositório
+$ git clone linkrepo
+
+# Acesse a pasta do projeto no seu terminal
+$ cd nyc-tickets-app
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicaçāo
+$ npm run start
+
+# A aplicaçāo será iniciada na porta 3000, acesse pelo navegador: http://localhost:3000
+```
+
+## 📚 Tecnologias utilizadas
+
+1. [JSX](https://pt-br.reactjs.org/docs/introducing-jsx.html)
+2. [Componentes](https://pt-br.reactjs.org/docs/components-and-props.html)
+3. [Props](https://pt-br.reactjs.org/docs/components-and-props.html)
+4. [Estado](https://pt-br.reactjs.org/docs/state-and-lifecycle.html)
+5. [FLuxo de Dados](https://pt-br.reactjs.org/docs/thinking-in-react.html)
+6. [Renderização de listas](https://pt-br.reactjs.org/docs/lists-and-keys.html)
+7. [Renderização condicional](https://pt-br.reactjs.org/docs/conditional-rendering.html)
+8. [localStorage ](https://warcontent.com/localstorage-javascript/)
+
+## 🙋‍♀️ Pessoa Autora
+
+[Linkedin](https://www.linkedin.com/in/larissa-terada/)
